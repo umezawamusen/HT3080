@@ -1,0 +1,24 @@
+/* xr1678x.h
+ *      Copyright (C) 2011 UMEZAWA MUSEN DENKI Co.,Ltd.
+ */
+
+enum ht_def_num {
+	HT_SET_AUTO_RS485 = (0x400+68),
+	HT_SET_XON_XOFF,
+	HT_SET_RTSCTS,
+	HT_SET_RS485_MODE,
+	HT_SET_LOCAL_ECHO,
+	HT_SET_RXTRG,
+	HT_SET_TXTRG,
+	HT_SET_HYSTERESIS,
+	HT_SET_AUTO485_DLY,
+};
+
+#define HT_SET_AUTO_RS485_ENABLE 1 
+#define HT_SET_AUTO_RS485_DISABLE 0
+#define HT_SET_RS485_FULL 1
+#define HT_SET_RS485_HALF 0
+#define HT_SET_FLOW_ENABLE 1
+#define HT_SET_FLOW_DISABLE 0 /* default */
+#define HT_SET_LOCAL_ECHO_ON 1
+#define HT_SET_LOCAL_ECHO_OFF 0 /* default */
