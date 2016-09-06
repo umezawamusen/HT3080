@@ -1,46 +1,48 @@
-# Armadillo-460—pHT3080ƒhƒ‰ƒCƒo\’z
+# Armadillo-460ç”¨HT3080ãƒ‰ãƒ©ã‚¤ãƒæ§‹ç¯‰
 
-## ŠÂ‹«
+## ç’°å¢ƒ
 * URL
 http://armadillo.atmark-techno.com/armadillo-460/downloads
 
 * ATDE3
 V20120709
 
-* ƒ†[ƒUƒ‰ƒ“ƒh
+* ãƒ¦ãƒ¼ã‚¶ãƒ©ãƒ³ãƒ‰
 V20160126
 
-* LinuxƒJ[ƒlƒ‹
+* Linuxã‚«ãƒ¼ãƒãƒ«
 V2.6.26-at25
 
-## ŠÂ‹«\’zî•ñ
-[Atmark-distŠJ”­ƒKƒCƒh](http://armadillo.atmark-techno.com/files/downloads/dist/atmark-dist_developers_guide_ja-1.0.9.pdf)
-11.V‹KƒfƒoƒCƒXƒhƒ‰ƒCƒo‚Ì’Ç‰Á•û–@
-‚ÌMakefile‚ğ—p‚¢‚Äì¬
+## ç’°å¢ƒæ§‹ç¯‰æƒ…å ±
+[Atmark-disté–‹ç™ºã‚¬ã‚¤ãƒ‰](http://armadillo.atmark-techno.com/files/downloads/dist/atmark-dist_developers_guide_ja-1.0.9.pdf)
+11.æ–°è¦ãƒ‡ãƒã‚¤ã‚¹ãƒ‰ãƒ©ã‚¤ãƒã®è¿½åŠ æ–¹æ³•
+ã®Makefileã‚’ç”¨ã„ã¦ä½œæˆ
 
-##ƒRƒ“ƒpƒCƒ‹
+##ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«
 ```
 $ make CROSS_COMPILE=arm-linux-gnueabi-
 ```
 
-## ƒfƒoƒCƒXƒm[ƒh’Ç‰Á
-mknod -m 666 /dev/ttyXR78x0 c 40 0
-mknod -m 666 /dev/ttyXR78x1 c 40 1
-mknod -m 666 /dev/ttyXR78x2 c 40 2
-mknod -m 666 /dev/ttyXR78x3 c 40 3
-mknod -m 666 /dev/ttyXR78x4 c 40 4
-mknod -m 666 /dev/ttyXR78x5 c 40 5
-mknod -m 666 /dev/ttyXR78x6 c 40 6
-mknod -m 666 /dev/ttyXR78x7 c 40 7
+## ãƒ‡ãƒã‚¤ã‚¹ãƒãƒ¼ãƒ‰è¿½åŠ 
+mknod -m 666 /dev/ttyXR78x0 c 40 0  
+mknod -m 666 /dev/ttyXR78x1 c 40 1  
+mknod -m 666 /dev/ttyXR78x2 c 40 2  
+mknod -m 666 /dev/ttyXR78x3 c 40 3  
+mknod -m 666 /dev/ttyXR78x4 c 40 4  
+mknod -m 666 /dev/ttyXR78x5 c 40 5  
+mknod -m 666 /dev/ttyXR78x6 c 40 6  
+mknod -m 666 /dev/ttyXR78x7 c 40 7  
 
-# ƒfƒoƒCƒXƒhƒ‰ƒCƒo‚ÌƒCƒ“ƒXƒg[ƒ‹
+# ãƒ‡ãƒã‚¤ã‚¹ãƒ‰ãƒ©ã‚¤ãƒã®ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«
 ```
-# insmod xr1678x.ko io=0xXXX(ƒAƒhƒŒƒX0x000`0xF00) irq=x(2`7) major=xx
+# insmod xr1678x.ko io=0xXXX(ã‚¢ãƒ‰ãƒ¬ã‚¹0x000ï½0xF00) irq=x(2ï½7) major=xx
 ```
-(‚P‚Oi”AÈ—ª‰Â)
-ex)insmod xr1678.ko io=0x300 irq=5 major=40
-ex•¡”–‡)insmod xr1678.ko io=0x300,0x400 irq=5,6
-ƒƒWƒƒ[”Ô†‚Ì•W€‚Í40‚Æ‚µ‚Ä‚ ‚éBw’è‚³‚ê‚½ê‡AƒfƒoƒCƒXƒm[ƒh‚ÌƒƒWƒƒ[”Ô†‚ğ’ˆÓ‚·‚é‚±‚ÆB
+(ï¼‘ï¼é€²æ•°ã€çœç•¥å¯)
+```
+ex)insmod xr1678.ko io=0x300 irq=5 major=40ã€€ã€€
+exè¤‡æ•°æš)insmod xr1678.ko io=0x300,0x400 irq=5,6
+ãƒ¡ã‚¸ãƒ£ãƒ¼ç•ªå·ã®æ¨™æº–ã¯40ã¨ã—ã¦ã‚ã‚‹ã€‚æŒ‡å®šã•ã‚ŒãŸå ´åˆã€ãƒ‡ãƒã‚¤ã‚¹ãƒãƒ¼ãƒ‰ã®ãƒ¡ã‚¸ãƒ£ãƒ¼ç•ªå·ã‚’æ³¨æ„ã™ã‚‹ã“ã¨ã€‚
+```
 
 
 
